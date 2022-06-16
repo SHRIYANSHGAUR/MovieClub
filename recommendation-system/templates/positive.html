@@ -91,7 +91,7 @@ figure {
   height: 100%;
   width: 100%;
   background-position: 50%;
-  background-repeat: no-repeat;
+
   background-size: cover;
 }
 
@@ -99,18 +99,13 @@ figure {
         display: block;
         background-color: black;
         color: white;
-        border-radius: 20px;
         padding: 1em;
         width: auto;
-        box-shadow: 0px -10px 20px -5px #E2E2E2;
         text-align: center;
     }
 
     @media screen and (max-width:600px) {
-        .movie{
-            margin-top: 12vh;
-            margin-bottom: 12vh;
-        }
+
 }
 
     table,tr,td,th{
@@ -127,6 +122,7 @@ figure {
     <div class="movie">
         <h2><u>MovieClub Welcomes You</u></h2>
         <p>Recommendations for: {{ search_name }}</p>
+        <div style="overflow-x:auto;">
         <table class="movie_table" align="center">
             <tr>
                 <th>Movie Title</th>
@@ -226,6 +222,7 @@ figure {
                 </tr>
             </tbody>
         </table>
+      </div>
         <br>
         </div>
 
