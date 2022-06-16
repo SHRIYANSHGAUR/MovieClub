@@ -8,7 +8,10 @@
 ### vectorizer = TfidfVectorizer()
 ### feature_vectors = vectorizer.fit_transform(combined_features)
 
-## found array of closed matches for user inputs using difflib library 
+## Found array of closed matches amoung all movies in the list for given user input using difflib library 
+### list_of_all_titles = movies_data['title'].tolist()
+### find_close_match = difflib.get_close_matches(movie_name, list_of_all_titles)
+
 
 ## Used the Algorithm of Cosine Similarity (Angular distance between two values on 2D plot) to create similarity matrix  according to values of array of close matches to User Input
 ### similarity = cosine_similarity(feature_vectors)
