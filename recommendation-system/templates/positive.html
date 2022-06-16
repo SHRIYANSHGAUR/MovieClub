@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MovieClub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:300,500&amp;display=swap'>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style>
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 100%;
+    background-color: #000;
+    color: #fff;
+  line-height: 1.5;
+
+}
+@media (min-width: 32rem) {
+  body {
+    font-size: 102.5%;
+  }
+}
+@media (min-width: 54rem) {
+  body {
+    font-size: 105%;
+  }
+}
+@media (min-width: 65rem) {
+  body {
+    font-size: 107.5%;
+  }
+}
+@media (min-width: 75em) {
+  body {
+    font-size: 110%;
+  }
+}
+@media (min-width: 91rem) {
+  body {
+    font-size: 115%;
+  }
+}
+@media (min-width: 115rem) {
+  body {
+    font-size: 120%;
+  }
+}
+@media (min-width: 130rem) {
+  body {
+    font-size: 125%;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+figure {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.js-overflow {
+  overflow: hidden;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.absolute-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+    .movie{
+        display: block;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        padding: 1em;
+        width: auto;
+        box-shadow: 0px -10px 20px -5px #E2E2E2;
+        text-align: center;
+    }
+
+    @media screen and (max-width:600px) {
+        .movie{
+            margin-top: 12vh;
+            margin-bottom: 12vh;
+        }
+}
+
+    table,tr,td,th{
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    td{
+      padding: 1px;
+    }
+
+</style>
+</head>
+<body>
+    <div class="movie">
+        <h2><u>MovieClub Welcomes You</u></h2>
+        <p>Recommendations for: {{ search_name }}</p>
+        <table class="movie_table" align="center">
+            <tr>
+                <th>Movie Title</th>
+                <th>Genre</th>
+                <th>Visit HomePage</th>
+
+            </tr>
+            <tbody class="table_body">
+                <tr>
+                    <td>{{ movie_names[0] }}</td>
+                    <td>{{ movie_date[0] }}</td>
+                    <td><a href={{ movie_dir[0] }}>{{ movie_dir[0] }}</a></td>
+                </tr>
+                <tr>
+                    <td>{{ movie_names[1] }}</td>
+                    <td>{{ movie_date[1] }}</td>
+                    <td><a href={{ movie_dir[1] }}>{{ movie_dir[1] }}</a></td>
+
+                </tr>
+                <tr>
+                    <td>{{ movie_names[2] }}</td>
+                    <td>{{ movie_date[2] }}</td>
+                    <td><a href={{ movie_dir[2] }}>{{ movie_dir[2] }}</a></td>
+
+                </tr>
+                <tr>
+                    <td>{{ movie_names[3] }}</td>
+                    <td>{{ movie_date[3] }}</td>
+                    <td><a href={{ movie_dir[3] }}>{{ movie_dir[3] }}</a></td>
+
+                </tr>
+                <tr>
+                    <td>{{ movie_names[4] }}</td>
+                    <td>{{ movie_date[4] }}</td>
+                    <td><a href={{ movie_dir[4] }}>{{ movie_dir[4] }}</a></td>
+
+                </tr>
+                <tr>
+                    <td>{{ movie_names[5] }}</td>
+                    <td>{{ movie_date[5] }}</td>
+                    <td><a href={{ movie_dir[5] }}>{{ movie_dir[5] }}</a></td>
+
+                </tr>
+                <tr>
+                    <td>{{ movie_names[6] }}</td>
+                    <td>{{ movie_date[6] }}</td>
+                    <td><a href={{ movie_dir[6] }}>{{ movie_dir[6] }}</a></td>
+
+                </tr>
+                <tr>
+                    <td>{{ movie_names[7] }}</td>
+                    <td>{{ movie_date[7] }}</td>
+                    <td><a href={{ movie_dir[7] }}>{{ movie_dir[7] }}</a></td>
+
+                </tr>
+                <tr>
+                    <td>{{ movie_names[8] }}</td>
+                    <td>{{ movie_date[8] }}</td>
+                    <td><a href={{ movie_dir[8] }}>{{ movie_dir[8] }}</a></td>
+
+                </tr>
+                <tr>
+                    <td>{{ movie_names[9] }}</td>
+                    <td>{{ movie_date[9] }}</td>
+                    <td><a href={{ movie_dir[9] }}>{{ movie_dir[9] }}</a></td>
+
+
+                </tr>
+                <tr>
+                    <td>{{ movie_names[10] }}</td>
+                    <td>{{ movie_date[10] }}</td>
+                    <td><a href={{ movie_dir[10] }}>{{ movie_dir[10] }}</a></td>
+
+                </tr><tr>
+                    <td>{{ movie_names[11] }}</td>
+                    <td>{{ movie_date[11] }}</td>
+                    <td><a href={{ movie_dir[11] }}>{{ movie_dir[11] }}</a></td>
+
+                </tr>
+                <tr>
+                    <td>{{ movie_names[12] }}</td>
+                    <td>{{ movie_date[12] }}</td>
+                    <td><a href={{ movie_dir[12] }}>{{ movie_dir[12] }}</a></td>
+
+                </tr>
+                <tr>
+                    <td>{{ movie_names[13] }}</td>
+                    <td>{{ movie_date[13] }}</td>
+                    <td><a href={{ movie_dir[13] }}>{{ movie_dir[13] }}</a></td>
+
+                </tr>
+                <tr>
+                    <td>{{ movie_names[14] }}</td>
+                    <td>{{ movie_date[14] }}</td>
+                    <td><a href={{ movie_dir[14] }}>{{ movie_dir[14] }}</a></td>
+
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        </div>
+
+</body>
+</html>
