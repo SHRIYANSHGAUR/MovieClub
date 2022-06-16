@@ -3,7 +3,7 @@
 ### Load the data set and extract  features
 ### selected_features = ['genres','keywords','tagline','cast','director','vote_average','popularity']
 
-## Used TfidfVectorizer() to create a vector space of integers using concatenated features variable for each movie
+## Used TfidfVectorizer() to create a vector space of floats using concatenated features variable for each movie
 ### combined_features = movies_data['genres']+' '+movies_data['keywords']+' '+movies_data['tagline']+' '+movies_data['cast']+' '+movies_data['director']+' '+str(movies_data['vote_average'])+' '+ str(movies_data['popularity'])
 ### vectorizer = TfidfVectorizer()
 ### feature_vectors = vectorizer.fit_transform(combined_features)
