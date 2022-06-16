@@ -22,5 +22,13 @@
 ## Create three lists and append the information of top 15 movies recommended their name, genre, homepage website values in it, and pass the lists to HTML frontend via Flask backend
 ### return flask.render_template('positive.html',movie_names=names,movie_date=genre,movie_dir=dir, search_name=m_name)
 
+## Future Scope 
+### To create separate pages of lists of movies recommended according to SELECVTIVE features choosen by user like separate lists of recommendations based on Ratings, separate list for recommendations based on genre and so on!
+
+## Challenge 
+### Cold start problem which persists in all content based filter models as for new user we cannot reecommend anything as we dont know his/her preference.
+
+## Viable Solution
+### Take User's location data from his/her Internet adderess and based on language spoken in that location recommend the movies!
 
 ### Open for Collab!
