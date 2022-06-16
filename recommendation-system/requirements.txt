@@ -1,11 +1,7 @@
-diff-match-patch @ file:///Users/ktietz/demo/mc3/conda-bld/diff-match-patch_1630511840874/work
-Flask @ file:///home/ktietz/src/ci/flask_1611932660458/work
-gunicorn==20.0.4
-numpy @ file:///C:/ci/numpy_and_numpy_base_1626271900803/work
-numpydoc @ file:///tmp/build/80754af9/numpydoc_1605117425582/work
-pandas @ file:///C:/ci/pandas_1635506685681/work
-pipreqs==0.4.11
+Flask
+gunicorn
+numpy 
+pandas
+pipreqs
+scikit-learn
 
-scikit-image==0.18.3
-scikit-learn @ file:///C:/ci/scikit-learn_1622739499047/work
-scikit-learn-intelex==2021.20210714.120553
