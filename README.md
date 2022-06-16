@@ -15,6 +15,9 @@
 
 ## Used the Algorithm of Cosine Similarity (Angular distance between two values on 2D plot) to create similarity matrix  according to values of array of close matches to User Input
 ### similarity = cosine_similarity(feature_vectors)
+### index_of_the_movie = movies_data[movies_data.title == close_match]['index'].values[0]
+### similarity_score = list(enumerate(similarity[index_of_the_movie]))
+
 
 ## Sort the movies according to  similarity value present at 1st index i.e x[1]  in Descending order (Higher similarity first)
 ### sorted_similar_movies = sorted(similarity_score, key = lambda x:x[1], reverse = True)
