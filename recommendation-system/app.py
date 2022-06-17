@@ -57,6 +57,11 @@ def main():
 
         find_close_match = difflib.get_close_matches(m_name, list_of_all_titles)
 
+        if find_close_match==[]:
+            return flask.render_template('positive.html',movie_names=["Empty_List"],movie_date=["Empty_List"],movie_dir=["Empty_List"], search_name="Not in dataset")
+
+
+
         close_match = find_close_match[0]
 
         index_of_the_movie = movies_data[movies_data.title == close_match]['index'].values[0]
@@ -83,6 +88,7 @@ def main():
 
                 #print(i, '.',title_from_index,'->', genre_from_index,'by',director_from_index)
             i+=1
+
 
 
 
