@@ -4,3 +4,4 @@ numpy
 pandas
 pipreqs
 scikit-learn
+difflib
